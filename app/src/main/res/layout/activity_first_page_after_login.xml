@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_first_page_after_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/b3"
+    tools:context="com.fridaygmail.saurabh.multip.FirstPageAfterLogin">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:layout_gravity="right"
+        android:background="#fc5353"
+        android:textColor="#ffffff"
+        android:text="Logout"
+        android:id="@+id/firstPageLogout" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/first"/>
+    <Button
+        android:text="Camera"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_above="@+id/specialFunction"
+        android:layout_alignLeft="@+id/specialFunction"
+        android:layout_alignStart="@+id/specialFunction"
+        android:textSize="30dp"
+        android:background="#fdbd39"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/cameraFirstPage"
+        />
+
+
+
+    <Button
+        android:text="Calculator"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:background="#fdbd39"
+        android:textColor="#ffffff"
+        android:id="@+id/calculatorFirstPage"
+        android:layout_above="@+id/cameraFirstPage"
+        android:layout_alignLeft="@+id/cameraFirstPage"
+        android:layout_alignStart="@+id/cameraFirstPage"
+        android:layout_alignRight="@+id/cameraFirstPage"
+        android:layout_alignEnd="@+id/cameraFirstPage" />
+
+    <Button
+        android:text="Media Player"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="30dp"
+        android:background="#fdbd39"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="8dp"
+        android:id="@+id/mediaPlayerFirstPage"
+        android:layout_above="@+id/calculatorFirstPage"
+        android:layout_alignLeft="@+id/calculatorFirstPage"
+        android:layout_alignStart="@+id/calculatorFirstPage"
+        android:layout_alignRight="@+id/calculatorFirstPage"
+        android:layout_alignEnd="@+id/calculatorFirstPage" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:textSize="30dp"
+        android:background="#fdbd39"
+        android:textColor="#ffffff"
+        android:id="@+id/specialFunction"
+        android:text="Special Function"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+         />
+</LinearLayout>

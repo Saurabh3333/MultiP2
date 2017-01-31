@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_media_player_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/b6"
+    android:orientation="vertical"
+    tools:context="com.fridaygmail.saurabh.multip.MediaPlayerPage">
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="back"
+        android:textSize="17dp"
+        android:background="#fc5353"
+        android:textColor="#ffffff"
+        android:id="@+id/backCalculator"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MUSIC PLAYER"
+        android:gravity="center"
+        android:id="@+id/musicplayer"
+        android:layout_below="@+id/backCalculator"
+        android:textColor="@color/colorPrimary"
+        android:textSize="40dp"
+        android:fontFamily="serif-monospace" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/musicplayer"
+        android:src="@drawable/one" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:width="300dp"
+        android:layout_marginTop="40dp"
+        android:textSize="25dp"
+        android:height="70dp"
+        android:textColor="#ffffff"
+        android:background="#ff36a1"
+        android:alpha="0.80"
+        android:id="@+id/play"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@+id/imageView"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/backCalculator"
+        android:layout_toEndOf="@+id/backCalculator" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PAUSE"
+        android:textColor="#ffffff"
+        android:background="#ff36a1"
+        android:alpha="0.80"
+        android:layout_marginBottom="8dp"
+        android:width="300dp"
+        android:textSize="25dp"
+        android:height="70dp"
+        android:layout_gravity="center"
+        android:id="@+id/pause"
+        android:layout_alignTop="@+id/play"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:width="300dp"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:background="#ff36a1"
+        android:alpha="0.80"
+        android:height="70dp"
+        android:id="@+id/stop"
+        />
+</LinearLayout>

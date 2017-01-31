@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_question_feed_main_page"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/b1"
+    tools:context="com.fridaygmail.saurabh.multip.QuestionFeedMainPage">
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="20dp"
+    android:src="@drawable/ask"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:height="100dp"
+        android:id="@+id/q"
+
+        android:hint="Type your question here"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignBottom="@+id/o4"
+
+            android:id="@+id/radioGroupFeed">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rightAnswer1"
+                android:layout_weight="1"
+                android:layout_marginTop="2dp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/radioGroup2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="22dp"
+                android:layout_weight="1"
+                android:id="@+id/rightAnswer2" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/o3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="22dp"
+                android:id="@+id/rightAnswer3"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/o4"
+                android:layout_alignLeft="@+id/rightAnswer3"
+                android:layout_alignStart="@+id/rightAnswer3"
+                android:layout_marginTop="22dp"
+                android:id="@+id/rightAnswer4"
+                android:layout_weight="1" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="25dp"
+            android:hint="Option 1"
+            android:ems="10"
+            android:layout_below="@+id/q"
+
+            android:id="@+id/o1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="25dp"
+            android:hint="Option 2"
+            android:ems="10"
+            android:layout_centerVertical="true"
+            android:id="@+id/o2"
+            android:layout_alignLeft="@+id/o1"
+            android:layout_alignStart="@+id/o1" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Option 3"
+            android:textSize="25dp"
+            android:ems="10"
+            android:layout_below="@+id/o2"
+            android:id="@+id/o3"
+            android:layout_alignLeft="@+id/o2"
+            android:layout_alignStart="@+id/o2" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:textSize="25dp"
+            android:hint="Option 4"
+            android:ems="10"
+            android:layout_below="@+id/o3"
+
+            android:id="@+id/o4"
+            android:layout_alignLeft="@+id/submitQF"
+            android:layout_alignStart="@+id/submitQF" />
+    </LinearLayout>
+</LinearLayout>
+
+
+    <Button
+        android:text="Submit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#4bae4f"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/submitQF" />
+
+
+
+</LinearLayout>

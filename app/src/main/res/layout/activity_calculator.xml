@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_calculator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="@drawable/b8"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.fridaygmail.saurabh.multip.Calculator">
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="BACK"
+        android:id="@+id/backCalculator"
+        android:textSize="17dp"
+        android:background="#fc5353"
+        android:textColor="#ffffff" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULATOR"
+        android:textSize="40dp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@+id/backCalculator"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:fontFamily="monospace" />
+
+
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/num1"
+        android:hint="Enter your first number"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/num2"
+        android:hint="Enter your second number"
+        android:inputType="numberDecimal"
+        android:layout_gravity="center"
+        android:layout_below="@+id/num1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:id="@+id/ans"
+        android:layout_below="@+id/num2"
+        android:hint="Result"
+        android:layout_width="250dp"
+        android:gravity="center"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="40dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:background="#713d3d"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/add"
+        android:layout_marginTop="30dp"
+        android:layout_alignRight="@+id/subtract"
+        android:layout_alignEnd="@+id/subtract" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="SUBTRACT"
+        android:background="#713d3d"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:id="@+id/subtract"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/add"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_height="wrap_content"
+        android:text="MULTIPLY"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="150dp"
+        android:layout_marginLeft="15dp"
+        android:background="#713d3d"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:id="@+id/multiply"
+        android:layout_above="@+id/subtract"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_height="wrap_content"
+        android:text="DIVIDE"
+        android:layout_marginTop="5dp"
+        android:id="@+id/divide"
+        android:layout_width="150dp"
+        android:layout_alignBottom="@+id/subtract"
+        android:layout_alignRight="@+id/multiply"
+        android:background="#713d3d"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_alignEnd="@+id/multiply"
+        android:layout_alignLeft="@+id/multiply"
+        android:layout_alignStart="@+id/multiply" />
+</LinearLayout>
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="150dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:background="#3c77dd"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        android:id="@+id/reset"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</LinearLayout>

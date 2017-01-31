@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/b7"
+    android:orientation="vertical"
+    tools:context="com.fridaygmail.saurabh.multip.MainActivity">
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:text="BACK"
+        android:id="@+id/backMainActivity"
+        android:textSize="17dp"
+        android:background="#fc5353"
+        android:textColor="#ffffff" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/gandalf"/>
+    <Button
+        android:text="Quiz"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="15dp"
+        android:textSize="25dp"
+        android:background="#fdbd39"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/quizButton" />
+
+    <Button
+        android:text="Magical Music Player"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:background="#fdbd39"
+        android:textColor="#ffffff"
+        android:id="@+id/specialFunctionMagicalMusicPlayer"
+        android:layout_below="@+id/quizButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+         />
+</LinearLayout>
